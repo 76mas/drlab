@@ -1,14 +1,16 @@
+import Container from "./Container";
 
-import Container from "./Container"
-
-const Feature=()=>{
-    return(<>
-       <section
+const Feature = () => {
+  return (
+    <>
+      <section
         id="features"
         className=" h-full mt-[184px] z-50  p-0  flex  w-full flex-col items-center relative "
       >
+        <div className="absolute w-[1090px] h-[660px] right-0 bottom-0 rounded-tl-full bg-[#b78bf51b] opacity-90 blur-3xl"></div>
+
         <Container>
-          <div className="flex w-full flex-col items-center">
+          <div className="flex w-full z-[3333] flex-col items-center">
             <div className="flex items-center flex-col max-w-[700px]"></div>
             <h1 className="text-center w-full text-[60px] text-[#7E808F]">
               <span className="text-white">ميزات قوية لمساعدتك في إدارة </span>
@@ -151,14 +153,13 @@ const Feature=()=>{
                 </div>
 
                 <div className="w-full flex   flex-col items-end pt-[120px] h-full py-5">
-                  <h1 className="text-[28px] text-white">
-                    الإرسال عبر الواتساب
-                  </h1>
+                  <h1 className="text-[28px] text-white">تخصيص الفحوصات</h1>
                   <p
                     dir="rtl"
                     className="pt-2 font-thin text-[18px] text-white/60"
                   >
-                    إرسال النتائج مباشرة إلى المرضى عبر الواتساب بنقرة واحدة.{" "}
+                    تخصيص الفحوصات بناءً على احتياجات المرضى، لتقديم خدمات
+                    دقيقة.{" "}
                   </p>
                 </div>
 
@@ -222,10 +223,8 @@ const Feature=()=>{
           </div>
         </Container>
       </section>
-   
-    
-    </>)
-}
-
+    </>
+  );
+};
 
 export default Feature;

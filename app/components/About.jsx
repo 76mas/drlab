@@ -1,14 +1,17 @@
-
-import Container from "./Container"
-const About=()=>{
-    return(<>
-       <section
+import Container from "./Container";
+const About = () => {
+  return (
+    <>
+      <section
         id="about"
         className=" h-full  -mt-10 z-50 m-0 p-0 min-h-[100vh] flex  w-full flex-col items-center relative "
       >
-        <div className="w-full absolute h-full">
+        {/* <div className="w-full absolute h-full">
           <img src="/img/light2.svg" alt="light" loading="lazy" />
-        </div>
+        </div> */}
+
+                <div className="absolute w-[1090px] h-[660px] left-0 top-0 rounded-tr-full bg-[#b78bf51b] opacity-90 blur-3xl"></div>
+
         <div className="w-full z-50 h-full flex justify-center">
           <Container>
             <div className="w-full h-full flex justify-center">
@@ -57,7 +60,7 @@ const About=()=>{
 
                   <div className="flex mt-4 flex-col justify-between items-end h-full pt-8">
                     <h1 className="text-[24px] text-white">
-                      تحسين جودة الخدمة
+                      توفير التكاليف
                     </h1>
                     <p
                       dir="rtl"
@@ -71,7 +74,7 @@ const About=()=>{
 
                 <div className="relative card-about flex flex-col w-1/3 h-[208px] p-5 items-end rounded-[12px] bg-[#181534] transition-all duration-300">
                   <div className="absolute card-about-icon top-4 right-4 w-[44px] h-[43px] p-1 rounded-[12px] border border-[#4c4764] bg-[#ffffff31] flex items-center justify-center">
-                    <img src="/img/discount.svg" alt="icon" loading="lazy" />
+                    <img src="/img/increse.svg" alt="icon" loading="lazy" />
                   </div>
 
                   <div className="flex mt-4 flex-col justify-between items-end h-full pt-8">
@@ -112,8 +115,9 @@ const About=()=>{
             </div>
           </Container>
         </div>
-      </section></>)
-}
-
+      </section>
+    </>
+  );
+};
 
 export default About;

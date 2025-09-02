@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #9053E7;
+  background-color: #9053e7;
   height: 59px;
   cursor: pointer;
 }
@@ -66,25 +66,25 @@
 }
 
 .card:hover {
-  border: 3px solid #054fe1;
+  border: 3px solid #6f00ff;
   border-bottom: none;
   border-right: none;
 }
 
 .card-about:hover {
-  background: #9053e7;
+  background: #9153e73f;
   transition: all 0.3s ease;
 }
 
 .card-about:hover .card-about-icon {
   border-color: #ffffff;
+  background-color: #ffffff80;
   transition: border 0.3s ease;
 }
 
 /*  */
 
 .feature-card {
-  border-image: linear-gradient(300deg, #010815 30%, #422e5f 80%) 1;
   background: linear-gradient(300deg, #010815 30%, #1a133b 80%);
   transition: all 0.3s ease;
 }
@@ -176,6 +176,8 @@
     rgba(255, 255, 255, 0) 100%
   );
 }
+
+
 
 ::-webkit-scrollbar {
   width: 12px;

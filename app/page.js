@@ -19,7 +19,7 @@ import Hello from "./components/Hello";
 
 export default function Home() {
   return (
-    <div className=" h-full m-0 p-0  md:min-h-[100vh] lg:min-h-[100vh] flex  w-full flex-col items-center  bg-[#000712] ">
+    <div className=" h-full m-0 p-0  overflow-x-hidden md:min-h-[100vh] lg:min-h-[100vh] flex  w-full flex-col items-center  bg-[#000712] ">
       {/* section 1 */}
       <section
         id="home"
@@ -33,7 +33,7 @@ export default function Home() {
         <div className=" absolute">
           <img src="/img/bg.svg" alt="bg" loading="lazy" />
         </div>
-        <div className="hero flex justify-center w-full h-full mt-[32px]">
+        <div className="hero z-20 flex justify-center w-full h-full mt-[32px]">
           <Container>
             <div className="w-full h-full flex flex-col items-center ">
               <div
@@ -76,10 +76,11 @@ export default function Home() {
             </div>
           </Container>
         </div>
+        <div className="absolute w-[1090px] h-[660px] right-0 bottom-0 rounded-tl-full bg-[#b78bf51b] opacity-90 blur-3xl"></div>
 
-        <div className="flex justify-center z-[2] absolute right-0  items-center">
+        {/* <div className="flex justify-center z-[2] absolute right-0  items-center">
           <img src="/img/light.svg" alt="light" loading="lazy" />
-        </div>
+        </div> */}
       </section>
 
       {/* about 2 */}
@@ -95,7 +96,10 @@ export default function Home() {
         id="subscriptions"
         className=" h-full mt-[192px] z-[2220]  p-0 min-h-[100vh] flex  w-full flex-col items-center relative "
       >
-        <div className="w-full h-full flex justify-center">
+
+                <div className="absolute w-[1090px] h-[660px] right-0 -top-[192px] rounded-bl-full bg-[#b78bf51b] opacity-90 blur-3xl"></div>
+
+        <div className="w-full h-full flex z-[3333] justify-center">
           <Container>
             <div className="w-full items-center flex-col flex h-full">
               <div className="max-w-[500px]">
@@ -338,15 +342,17 @@ export default function Home() {
           </Container>
         </div>
 
-        <div className="flex justify-center z-[2] absolute right-0 max-h-[90vh]  items-center">
+        {/* <div className="flex justify-center z-[2] absolute right-0 max-h-[90vh]  items-center">
           <img src="/img/light.svg" alt="light" loading="lazy" />
-        </div>
+        </div> */}
       </section>
       {/* section 7 */}
       <section
         id="conact"
         className=" h-full mt-[192px] z-50  p-0 flex  w-full flex-col items-center relative "
       >
+                      <div className="absolute w-[1090px] -z-50 h-[660px] right-0 -top-[200px] rounded-bl-full bg-[#b78bf51b] opacity-90 blur-3xl"></div>
+
         <div className="flex justify-center w-full h-full">
           <Container>
             <div className="w-full flex justify-between gap-20 ">
