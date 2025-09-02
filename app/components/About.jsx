@@ -4,11 +4,9 @@ const About = () => {
     <>
       <section
         id="about"
-        className=" h-full  -mt-10 z-50 m-0 p-0 min-h-[100vh] flex  w-full flex-col items-center relative "
+        className=" h-full -mt-[500px] md:-mt-10 z-50 m-0 p-0 min-h-[100vh] flex  w-full flex-col items-center relative "
       >
-        {/* <div className="w-full absolute h-full">
-          <img src="/img/light2.svg" alt="light" loading="lazy" />
-        </div> */}
+
 
                 <div className="absolute w-[1090px] h-[660px] left-0 top-0 rounded-tr-full bg-[#b78bf51b] opacity-90 blur-3xl"></div>
 
@@ -16,7 +14,7 @@ const About = () => {
           <Container>
             <div className="w-full h-full flex justify-center">
               <div className="w-full flex items-center flex-col max-w-[700px]">
-                <h1 className="text-[39px] text-white font-bold">
+                <h1 className="text-[30px] md:text-[39px] text-white font-bold">
                   ؟ Dr.Lab ما هو نظام
                 </h1>
 
@@ -37,8 +35,8 @@ const About = () => {
         <div className="w-full z-50 h-full flex  justify-center">
           <Container>
             <div className="flex flex-col w-full items-center gap-[24px]">
-              <div className="flex gap-[24px] items-center justify-center">
-                <div className="relative card-about flex flex-col w-1/3 h-[208px] p-5 items-end rounded-[12px] bg-[#181534]">
+              <div className="flex flex-col md:flex-row gap-[24px] items-center justify-center">
+                <div className="relative card-about flex flex-col md:w-1/3 h-[208px] p-5 items-end rounded-[12px] bg-[#181534]">
                   <div className="absolute card-about-icon top-4 right-4 w-[44px] h-[43px] p-1 rounded-[12px] border border-[#4c4764] bg-[#ffffff31] flex items-center justify-center">
                     <img src="/img/inhance.svg" alt="icon" loading="lazy" />
                   </div>
@@ -53,7 +51,7 @@ const About = () => {
                     </p>
                   </div>
                 </div>
-                <div className="relative card-about flex flex-col w-1/3 h-[208px] p-5 items-end rounded-[12px] bg-[#181534] transition-all duration-300">
+                <div className="relative card-about flex flex-col md:w-1/3 h-[208px] p-5 items-end rounded-[12px] bg-[#181534] transition-all duration-300">
                   <div className="absolute card-about-icon top-4 right-4 w-[44px] h-[43px] p-1 rounded-[12px] border border-[#4c4764] bg-[#ffffff31] flex items-center justify-center">
                     <img src="/img/discount.svg" alt="icon" loading="lazy" />
                   </div>
@@ -72,7 +70,7 @@ const About = () => {
                   </div>
                 </div>
 
-                <div className="relative card-about flex flex-col w-1/3 h-[208px] p-5 items-end rounded-[12px] bg-[#181534] transition-all duration-300">
+                <div className="relative card-about flex flex-col md:w-1/3 h-[208px] p-5 items-end rounded-[12px] bg-[#181534] transition-all duration-300">
                   <div className="absolute card-about-icon top-4 right-4 w-[44px] h-[43px] p-1 rounded-[12px] border border-[#4c4764] bg-[#ffffff31] flex items-center justify-center">
                     <img src="/img/increse.svg" alt="icon" loading="lazy" />
                   </div>
@@ -90,18 +88,24 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="feature-card flex w-full h-[411px] items-center p-20 rounded-[12px] transition duration-300">
-                <div className="w-[491px]">
+              <div className="feature-card md:flex-row  justify-between p-10 flex-col flex w-full h-[411px] items-center md:p-20 rounded-[12px] transition duration-300">
+               
+              <div className="w-full flex items-center  gap-8 md:gap-0 justify-center">
+
+           
+                <div className="md:w-[491px] w-[200px]">
                   <img src="/img/tabledoctor.png" alt="table" loading="lazy" />
                 </div>
 
                 <div className="doctor-image w-auto transition-transform duration-300">
-                  <img src="/img/doctor.png" alt="doctor" loading="lazy" />
-                </div>
+                  <img className="w-[80px]" src="/img/doctor.png" alt="doctor" loading="lazy" />
+                </div>  
+                
+                 </div>
 
-                <div dir="rtl" className="w-[405px]">
-                  <h1 className="text-[36px] text-white">المميزات و الخصائص</h1>
-                  <p className="text-[#ECECEC] text-[16px] font-thin">
+                <div dir="rtl" className="md:w-[405px]">
+                  <h1 className="text-[20px] text-white">المميزات و الخصائص</h1>
+                  <p className="text-[#ECECEC] text-[12px] font-thin">
                     يساهم برنامج إدارة المختبرات الطبية في زيادة الكفاءة من خلال
                     أتمتة المهام الروتينية، مما يقلل من الوقت المستغرق في
                     العمليات اليومية ويحسن الأداء العام. كما يعزز جودة الخدمة
