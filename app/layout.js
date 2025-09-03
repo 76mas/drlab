@@ -21,10 +21,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* رابط فونت Cairo */}
         <link
           href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
           rel="stylesheet"
         />
+      
+        <link rel="icon" type="image/svg" href="/img/logo.svg" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
