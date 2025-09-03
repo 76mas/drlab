@@ -23,8 +23,8 @@ const Hello = () => {
           </Container>
         </div>
 
-                <div className="absolute w-[1090px] h-[660px] right-0 top-0 rounded-bl-full bg-[#b78bf51b] opacity-90 blur-3xl"></div>
-                <div className="absolute w-[400px] h-[460px] left-0 bottom-0 rounded-tr-full    bg-[#b78bf51b] opacity-90 blur-3xl"></div>
+                {/* <div className="absolute w-[1090px] h-[660px] right-0 top-0 rounded-bl-full bg-[#b78bf51b] opacity-90 blur-3xl"></div>
+                <div className="absolute w-[400px] h-[460px] left-0 bottom-0 rounded-tr-full    bg-[#b78bf51b] opacity-90 blur-3xl"></div> */}
 
       </section>
     </>

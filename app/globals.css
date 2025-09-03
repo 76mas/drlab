@@ -59,15 +59,16 @@
 }
 
 .card {
-  border: 3px solid transparent;
+  /* border: 3px solid transparent; */
   border-bottom: none;
   border-right: none;
   transition: 0.3s all;
 }
 
 .card:hover {
-  border: 3px solid #6f00ff;
+  /* border: 3px solid #6f00ff; */
   border-bottom: none;
+  background-color: #020d22;
   border-right: none;
 }
 
@@ -109,7 +110,7 @@
   filter: grayscale(0.2);
 }
 .card:hover .robot-icon {
-  filter: drop-shadow(0 0 20px #a033d2a9);
+  filter: drop-shadow(0 0 20px #a033d229);
 
   transition: filter 0.1s ease;
 }
@@ -124,13 +125,12 @@
   align-items: center;
   gap: 12px;
   padding: 24px;
-  border: 1px solid #ffffff1a;
+
   background: #ffffff0c;
 }
 
 .contact-card:hover {
   background: linear-gradient(to right, #2e0c3e2b 3%, #ffffff22 100%);
-  border: 1px solid #2a005e;
 }
 
 .contact-card-icon {
@@ -146,9 +146,72 @@
 }
 .card:hover .icona {
   background-color: #111;
-  box-shadow: 0 15px 15px 5px rgb(19, 23, 63), 0 10px 10px -5px rgb(16, 24, 182);
+  /* box-shadow: 0 15px 25px 5px rgb(19, 23, 63), 0 10px 3px -7px rgb(16, 24, 182); */
+  box-shadow: 0px 5px 10px rgb(42, 10, 85);
   transition: 0.3s ease;
 }
+
+/* .card::before{
+  content: "";
+  width: 330%;
+  height: 100%;
+  background-color: #9053e7;
+
+
+} */
+
+.card-big {
+  overflow: hidden;
+  position: relative;
+}
+
+.card-big:hover::before {
+  height: 200px;
+  width: 200px;
+}
+.card:hover::after {
+  display: block;
+}
+.card {
+  position: relative;
+  border-radius: 12px;
+  background: #151829;
+  overflow: hidden;
+  z-index: 0; /* مهم */
+}
+
+.card::after {
+  content: "";
+  display: none;
+  position: absolute;
+  inset: 0;
+  padding: 2px; /* سماكة البوردر */
+  border-radius: 12px;
+  background: linear-gradient(120deg, #8400ff6d, transparent, transparent);
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  z-index: -1; /* يخليه ورا المحتوى */
+}
+
+.card-big::before {
+  /* display: none; */
+  transition: 0.3s ease-out;
+  /* transition-duration: 0.3s; */
+  content: "";
+  position: absolute;
+  bottom: 32px;
+  left: 1px;
+  z-index: 49;
+  width: 0px;
+  height: 0px;
+  border-radius: 100%;
+  background-color: #9153e799;
+  filter: blur(40px);
+}
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -177,8 +240,6 @@
   );
 }
 
-
-
 ::-webkit-scrollbar {
   width: 12px;
   height: 12px;
@@ -197,6 +258,108 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #ccc;
+}
+
+/* about */
+.card-hover-border {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden; /* لمنع البوردر من الخروج عن الزوايا */
+  transition: 0.3s;
+}
+
+.card-hover-border::after {
+  content: "";
+  display: none;
+  position: absolute;
+  inset: 0;
+  padding: 2px; /* سماكة البوردر */
+  border-radius: 12px;
+  background: linear-gradient(120deg, #8400ff2c, transparent, transparent);
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  z-index: 1;
+}
+
+.card-hover-border:hover::after {
+  display: block;
+}
+
+.card-hover-border > * {
+  position: relative;
+  z-index: 2;
+}
+/* about */
+
+/* contact */
+
+.contact-card {
+  position: relative;
+  z-index: 0;
+  background: #ffffff0c; /* خلفية شبه شفافة */
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-card::after {
+  content: "";
+  display: none;
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 12px;
+  background: linear-gradient(120deg, #8400ff2c, transparent, transparent);
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  z-index: 1;
+}
+
+.contact-card:hover::after {
+  display: block;
+}
+
+.contact-card > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* box map */
+.boxmap {
+  position: relative;
+  border-radius: 24px;
+
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.boxmap::after {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 24px;
+  background: linear-gradient(120deg, #5600d0, #8400ff43, transparent);
+
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+
+  z-index: 1;
+}
+
+.boxmap > * {
+  position: relative;
+  z-index: 2;
 }
 
 @theme inline {

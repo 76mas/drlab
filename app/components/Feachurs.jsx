@@ -5,24 +5,24 @@ const Feature = () => {
     <>
       <section
         id="features"
-        className=" h-full mt-[184px] z-50  p-0  flex  w-full flex-col items-center relative "
+        className=" h-full mt-[50px] md:mt-[184px] z-50  p-0  flex  w-full flex-col items-center relative "
       >
-        <div className="absolute w-[1090px] h-[660px] right-0 bottom-0 rounded-tl-full bg-[#b78bf51b] opacity-90 blur-3xl"></div>
+        {/* <div className="absolute w-[1090px] hidden md:block h-[660px] right-0 bottom-0 rounded-tl-full bg-[#b78bf51b] opacity-90 blur-3xl"></div> */}
 
         <Container>
           <div className="flex w-full z-[3333] flex-col items-center">
             <div className="flex items-center flex-col max-w-[700px]"></div>
-            <h1 className="text-center w-full text-[60px] text-[#7E808F]">
+            <h1 className="text-center w-full text-[30px] md:text-[60px] text-[#7E808F]">
               <span className="text-white">ميزات قوية لمساعدتك في إدارة </span>
               <br /> جميع العملاء المحتملين لديك
             </h1>
           </div>
 
           <div className="flex h-full mt-[60px] flex-col gap-[18px]  w-full items-center">
-            <div className="w-full h-[256px] gap-[18px] flex items-center">
-              <div className="bg-[#151829] card     w-[40%] h-full rounded-[12px] px-8 by-2 relative">
+            <div className="w-full md:h-[256px] flex-col md:flex-row gap-[18px] flex items-center">
+              <div className="bg-[#151829] card    md:w-[40%] h-full rounded-[12px] px-8 by-2 relative">
                 <div
-                  className={`p-2 rounded-[12px] absolute  icona top-6 right-8`}
+                  className={`p-2 rounded-[12px] absolute  icona top-6  md:right-8`}
                 >
                   <img
                     src="/img/cardicons/icon1.svg"
@@ -42,9 +42,9 @@ const Feature = () => {
                   </p>
                 </div>
               </div>
-              <div className="bg-[#151829] transition-all card  duration-300 w-[30%] h-full rounded-[12px] px-8 by-2 relative">
+              <div className="bg-[#151829] transition-all card  duration-300 md:w-[30%] h-full rounded-[12px] px-8 by-2 relative">
                 <div
-                  className={`absolute icona  p-3 rounded-[12px] top-6 right-8`}
+                  className={`absolute icona  p-3 rounded-[12px] top-6 md:right-8`}
                 >
                   <img
                     src="/img/cardicons/icon2.svg"
@@ -66,9 +66,9 @@ const Feature = () => {
                   </p>
                 </div>
               </div>
-              <div className="bg-[#151829] w-[30%] h-full card  transition-all duration-300  rounded-[12px] px-8 by-2 relative">
+              <div className="bg-[#151829] md:w-[30%] h-full card  transition-all duration-300  rounded-[12px] px-8 by-2 relative">
                 <div
-                  className={` absolute icona  p-3 rounded-[12px] top-6 right-8`}
+                  className={` absolute icona  p-3 rounded-[12px] top-6 md:right-8`}
                 >
                   <img
                     src="/img/cardicons/icon3.svg"
@@ -91,11 +91,11 @@ const Feature = () => {
             </div>
 
             {/* 1 */}
-            <div className="w-full h-[500px] gap-[18px] flex items-center">
-              <div className=" w-[30%] h-full flex flex-col gap-[18px] rounded-[12px]">
-                <div className="bg-[#151829] card h-[60%] w-full flex  px-8 by-2   transition-all duration-300   rounded-[12px] relative">
+            <div className="w-full  md:h-[500px] gap-[18px] md:flex-row flex-col flex items-center">
+              <div className=" md:w-[30%] h-full flex flex-col gap-[18px] rounded-[12px]">
+                <div className="bg-[#151829] h-full card md:h-[60%] w-full flex  px-8 by-2   transition-all duration-300   rounded-[12px] relative">
                   <div
-                    className={`absolute icona p-3 rounded-[12px] top-6 right-8`}
+                    className={`absolute icona p-3 rounded-[12px] top-6 md:right-8`}
                   >
                     <img
                       src="/img/cardicons/icon4.svg"
@@ -117,10 +117,10 @@ const Feature = () => {
                   </div>
                 </div>
 
-                <div className="bg-[#151829]  card h-[40%] w-full flex  px-8 by-2    transition-all duration-300   rounded-[12px] relative">
+                <div className="bg-[#151829] h-[200px]  card  md:h-[40%] w-full flex  px-8 by-2    transition-all duration-300   rounded-[12px] relative">
                   <div
                     className={` 
-                     absolute  p-[1px]  icona rounded-[12px] top-1 right-8`}
+                     absolute  p-[1px]  icona rounded-[12px] md:top-2 top-5 md:right-8`}
                   >
                     <img
                       src="/img/cardicons/icon5.svg"
@@ -135,7 +135,7 @@ const Feature = () => {
                     </h1>
                     <p
                       dir="rtl"
-                      className="pt-2 font-thin text-[18px] text-white/60"
+                      className="pt-6 md:pt-0 font-thin text-[18px] text-white/60"
                     >
                       إرسال النتائج مباشرة إلى المرضى عبر الواتساب بنقرة واحدة.{" "}
                     </p>
@@ -143,7 +143,7 @@ const Feature = () => {
                 </div>
               </div>
               {/* 2 */}
-              <div className="bg-[#151829] card w-[40%]   transition-all duration-300  h-full rounded-[12px] px-8 by-2  relative">
+              <div className="bg-[#151829] card-big card h-[500px] md:w-[40%]   transition-all duration-300  md:h-full rounded-[12px] px-8 by-2  relative">
                 <div className={`absolute  icona rounded-[12px] top-4 right-8`}>
                   <img
                     src="/img/cardicons/icon6.svg"
@@ -163,7 +163,7 @@ const Feature = () => {
                   </p>
                 </div>
 
-                <div className=" absolute bottom-[32px] left-4">
+                <div className=" absolute bottom-[32px] z-50 left-4">
                   <img
                     className="robot-icon "
                     src="/img/cardicons/robotsad.svg"
@@ -173,10 +173,10 @@ const Feature = () => {
                 </div>
               </div>
               {/* 3 */}
-              <div className=" w-[30%] h-full flex flex-col gap-[18px] rounded-[12px]">
+              <div className=" md:w-[30%] h-full flex flex-col gap-[18px] rounded-[12px]">
                 <div className="bg-[#151829] card  transition-all duration-300  h-[60%] w-full flex  px-8 by-2   rounded-[12px] relative">
                   <div
-                    className={`absolute icona  p-3 rounded-[12px] top-6 right-8`}
+                    className={`absolute icona  p-3 rounded-[12px] top-6 md:right-8`}
                   >
                     <img
                       src="/img/cardicons/icon7.svg"
@@ -196,9 +196,9 @@ const Feature = () => {
                   </div>
                 </div>
 
-                <div className="bg-[#151829]   card transition-all duration-300  h-[40%] w-full flex  px-8 by-2   rounded-[12px] relative">
+                <div className="bg-[#151829]   card transition-all duration-300 h-[200px] md:h-[40%] w-full flex  px-8 by-2   rounded-[12px] relative">
                   <div
-                    className={` absolute icona  p-2 rounded-[12px] top-2  right-8`}
+                    className={` absolute icona  p-2 rounded-[12px] top-2  md:right-8`}
                   >
                     <img
                       src="/img/cardicons/icon8.svg"
@@ -211,7 +211,7 @@ const Feature = () => {
                     <h1 className="text-[28px] text-white">التحديث تلقائيًا</h1>
                     <p
                       dir="rtl"
-                      className="pt-2 font-thin text-white/60 text-[18px]"
+                      className="pt-0 font-thin text-white/60 text-[18px]"
                     >
                       عند صدور تحديث جديد يصل التحديث تلقائيًا دون الحاجة لإعادة
                       التنزيل.
