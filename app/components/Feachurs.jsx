@@ -5,7 +5,7 @@ const Feature = () => {
     <>
       <section
         id="features"
-        className=" h-full mt-[50px] md:mt-[184px] z-50  p-0  flex  w-full flex-col items-center relative "
+        className=" h-full mt-[50px] z-50  p-0  flex  w-full flex-col items-center relative "
       >
         {/* <div className="absolute w-[1090px] hidden md:block h-[660px] right-0 bottom-0 rounded-tl-full bg-[#b78bf51b] opacity-90 blur-3xl"></div> */}
 

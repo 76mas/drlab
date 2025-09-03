@@ -101,7 +101,7 @@ export default function Home() {
 
       <Feature />
       {/* subscriptions 5 */}
-      <section  id="subscriptions"        className=" h-full mt-[50px] md:mt-[192px] z-[2220]  p-0 min-h-[100vh] flex  w-full flex-col items-center relative "
+      <section  id="subscriptions"        className=" h-full mt-[50px]  z-[2220]  p-0 min-h-[100vh] flex  w-full flex-col items-center relative "
       >
         {/* <div className="absolute w-[1090px] h-[660px] right-0 -top-[192px] rounded-bl-full bg-[#b78bf51b] opacity-90 blur-3xl"></div> */}
 
@@ -319,7 +319,7 @@ export default function Home() {
       </section>
 
       {/* section 6 */}
-      <section className=" h-full mt-[51px] md:mt-[192px] z-50  p-0 min-h-[100vh] flex  w-full flex-col items-center relative ">
+      <section className=" h-full mt-[51px] z-50  p-0 min-h-[100vh] flex  w-full flex-col items-center relative ">
         <div className=" absolute w-full h-full">
           <img src="/img/bg.svg" alt="bg" loading="lazy" />
         </div>
@@ -358,7 +358,7 @@ export default function Home() {
         </div> */}
       </section>
       {/* section 7 */}
-      <section        id="conact"  className=" h-full -mt-[100px] md:mt-[192px] pb-20 md:pb-0 z-50  p-0 flex  w-full flex-col items-center relative "
+      <section        id="conact"  className=" h-full -mt-[100px]  pb-20 md:pb-0 z-50  p-0 flex  w-full flex-col items-center relative "
       >
         {/* <div className="absolute w-[1090px] -z-50 h-[660px] right-0 -top-[200px] rounded-bl-full bg-[#b78bf51b] opacity-90 blur-3xl"></div> */}
 
