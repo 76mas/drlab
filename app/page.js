@@ -125,7 +125,7 @@ export default function Home() {
               <div className="w-full flex-col  md:flex-row  flex md:h-[782px] mt-[70px] items-center gap-[18px]">
                 <div
                   dir="rtl"
-                  className="md:w-1/3 h-[800px] md:h-[90%] flex p-10  border-[#3a3f48] border-1 bg-[#0d141e] rounded-[24px] flex-col justify-start"
+                  className="md:w-1/3 w-full h-[800px] md:h-[90%] flex p-10  border-[#3a3f48] border-1 bg-[#0d141e] rounded-[24px] flex-col justify-start"
                 >
                   <div className="w-full ">
                     <h1 className="flex pb-10 text-[18px] text-white">

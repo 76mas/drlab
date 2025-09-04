@@ -2,7 +2,7 @@ import Container from "./Container";
 const Hello = () => {
   return (
     <>
-      <section className=" h-full -mt-40  md:-mt-10 lg:-mt-10 z-50 m-0 p-0 min-h-[100vh] flex  w-full flex-col items-center relative ">
+      <section className="hello-section h-full -mt-40  md:-mt-10 lg:-mt-10 z-50 m-0 p-0 min-h-[100vh] flex  w-full flex-col items-center relative ">
         <div className="flex w-full h-full items-center justify-center">
           <Container>
             <div className="w-full h-full relative flex justify-center">

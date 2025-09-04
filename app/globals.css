@@ -482,3 +482,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@media (max-height:770px) {
+.hello-section {
+  margin-top: -30px;
+}
+}
+
+@media (max-width: 680px) {
+  #about {
+    margin-top: -400px;
+  }
+}

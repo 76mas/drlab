@@ -4,7 +4,7 @@ const About = () => {
     <>
       <section
         id="about"
-        className=" h-full -mt-[500px] md:-mt-10 z-50 m-0 p-0 min-h-[100vh] flex  w-full flex-col items-center relative "
+        className=" h-full     md:-mt-10 z-50 m-0 p-0 min-h-[100vh] flex  w-full flex-col items-center relative "
       >
         {/* <div className="absolute w-[1090px] h-[660px] left-0 top-0 rounded-tr-full bg-[#b78bf51b] opacity-90 blur-3xl"></div> */}
 
@@ -70,7 +70,7 @@ const About = () => {
                 </div>
 
   
-                <div className="relative card-about flex flex-col md:w-1/3 h-[208px] p-5 items-end rounded-[12px] bg-[#181534] transition-all duration-300 card-hover-border">
+                <div className="relative card-about flex flex-col w-full md:w-1/3 h-[208px] p-5 items-end rounded-[12px] bg-[#181534] transition-all duration-300 card-hover-border">
                   <div className="absolute card-about-icon top-4 right-4 w-[44px] h-[43px] p-1 rounded-[12px] border border-[#4c4764] bg-[#ffffff31] flex items-center justify-center">
                     <img src="/img/increse.svg" alt="icon" loading="lazy" />
                   </div>

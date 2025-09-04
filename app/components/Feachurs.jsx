@@ -20,7 +20,7 @@ const Feature = () => {
 
           <div className="flex h-full mt-[60px] flex-col gap-[18px]  w-full items-center">
             <div className="w-full md:h-[256px] flex-col md:flex-row gap-[18px] flex items-center">
-              <div className="bg-[#151829] card    md:w-[40%] h-full rounded-[12px] px-8 by-2 relative">
+              <div className="bg-[#151829] card  w-full   md:w-[40%] h-full rounded-[12px] px-8 by-2 relative">
                 <div
                   className={`p-2 rounded-[12px] absolute  icona top-6  md:right-8`}
                 >
@@ -42,7 +42,7 @@ const Feature = () => {
                   </p>
                 </div>
               </div>
-              <div className="bg-[#151829] transition-all card  duration-300 md:w-[30%] h-full rounded-[12px] px-8 by-2 relative">
+              <div className="bg-[#151829] transition-all card w-full  duration-300 md:w-[30%] h-full rounded-[12px] px-8 by-2 relative">
                 <div
                   className={`absolute icona  p-3 rounded-[12px] top-6 md:right-8`}
                 >
@@ -66,7 +66,7 @@ const Feature = () => {
                   </p>
                 </div>
               </div>
-              <div className="bg-[#151829] md:w-[30%] h-full card  transition-all duration-300  rounded-[12px] px-8 by-2 relative">
+              <div className="bg-[#151829] w-full md:w-[30%] h-full card  transition-all duration-300  rounded-[12px] px-8 by-2 relative">
                 <div
                   className={` absolute icona  p-3 rounded-[12px] top-6 md:right-8`}
                 >
@@ -92,8 +92,8 @@ const Feature = () => {
 
             {/* 1 */}
             <div className="w-full  md:h-[500px] gap-[18px] md:flex-row flex-col flex items-center">
-              <div className=" md:w-[30%] h-full flex flex-col gap-[18px] rounded-[12px]">
-                <div className="bg-[#151829] h-full card md:h-[60%] w-full flex  px-8 by-2   transition-all duration-300   rounded-[12px] relative">
+              <div className=" w-full md:w-[30%] h-full flex flex-col gap-[18px] rounded-[12px]">
+                <div className="bg-[#151829]  h-full card md:h-[60%] w-full flex  px-8 by-2   transition-all duration-300   rounded-[12px] relative">
                   <div
                     className={`absolute icona p-3 rounded-[12px] top-6 md:right-8`}
                   >
@@ -117,7 +117,7 @@ const Feature = () => {
                   </div>
                 </div>
 
-                <div className="bg-[#151829] h-[200px]  card  md:h-[40%] w-full flex  px-8 by-2    transition-all duration-300   rounded-[12px] relative">
+                <div className="bg-[#151829]  h-[200px]  card  md:h-[40%] w-full flex  px-8 by-2    transition-all duration-300   rounded-[12px] relative">
                   <div
                     className={` 
                      absolute  p-[1px]  icona rounded-[12px] md:top-2 top-5 md:right-8`}
@@ -143,7 +143,7 @@ const Feature = () => {
                 </div>
               </div>
               {/* 2 */}
-              <div className="bg-[#151829] card-big card h-[500px] md:w-[40%]   transition-all duration-300  md:h-full rounded-[12px] px-8 by-2  relative">
+              <div className="bg-[#151829] w-full card-big card h-[500px] md:w-[40%]   transition-all duration-300  md:h-full rounded-[12px] px-8 by-2  relative">
                 <div className={`absolute  icona rounded-[12px] top-4 right-8`}>
                   <img
                     src="/img/cardicons/icon6.svg"
@@ -173,7 +173,7 @@ const Feature = () => {
                 </div>
               </div>
               {/* 3 */}
-              <div className=" md:w-[30%] h-full flex flex-col gap-[18px] rounded-[12px]">
+              <div className=" w-full md:w-[30%] h-full flex flex-col gap-[18px] rounded-[12px]">
                 <div className="bg-[#151829] card  transition-all duration-300  h-[60%] w-full flex  px-8 by-2   rounded-[12px] relative">
                   <div
                     className={`absolute icona  p-3 rounded-[12px] top-6 md:right-8`}
